@@ -41,7 +41,7 @@ namespace UWPAppMobileCenterVS2015
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-            MobileCenter.Start("de11b587-a06e-4888-acea-8c54ec1b9255", typeof(Analytics));
+            
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -79,6 +79,7 @@ namespace UWPAppMobileCenterVS2015
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
+                MobileCenter.Start("de11b587-a06e-4888-acea-8c54ec1b9255", typeof(Analytics));
             }
         }
 
